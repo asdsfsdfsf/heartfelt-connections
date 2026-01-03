@@ -13,6 +13,8 @@ import Community from "./pages/Community";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Refund from "./pages/Refund";
+import Dashboard from "./pages/Dashboard";
+import DashboardSettings from "./pages/DashboardSettings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/refund" element={<Refund />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/settings" element={<DashboardSettings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
